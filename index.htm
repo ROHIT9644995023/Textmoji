@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Text <span><i class="fa-solid fa-arrow-right"></i></span>Emoji</h1>
+        <div id="endec-div">
+            <h3 id="enc-btn"><span><i class="fa-solid fa-lock"></i></span>Encrypt Text</h3>
+            <h3 id="dec-btn"><span><i class="fa-solid fa-lock-open"></i></span>Decrypt Text</h3>
+        </div>
+        <div id="enryption">
+            <h5>1. Type a message</h5>
+            <textarea placeholder="Haan yahi pr likhna hain" name="" id="txtmsg" cols="30" rows="10"></textarea>
+            <h5>2. Set a password</h5>
+            <input type="password" name="" id="password" placeholder="eg. 1234">
+            <button id="encrypt-btn"><span><i class="fa-solid fa-lock"></i></span>Enrcypt Text</button>
+        </div>
+        <div id="decryption">
+            <h5>1. Paste encrypted emojis</h5>
+            <textarea placeholder="Haan yahi pr likhna hain" name="" id="emojimsg" cols="30" rows="10"></textarea>
+            <h5>2. Type the password</h5>
+            <input type="password" name="" id="finalpassword" placeholder="eg. 1234">
+            <button id="decrypt-btn"><span><i class="fa-solid fa-lock-open"></i></span>Decrypt Emoji</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
